@@ -3,13 +3,22 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function() {
-    return "Hola desde la pagina de inicio";
+    echo "<a href='" . route('contactos') . "'>Contactos<br />";
+    echo "<a href='" . route('contactos') . "'>Contactos<br />";
+    echo "<a href='" . route('contactos') . "'>Contactos<br />";
 });
 
-Route::get('/contacto', function() {
+
+Route::get('/contactos', function() {
     return "Hola desde la pagina de contacto";
 });
+
+
 
 Route::get('saludo/{nombre?}', function($nombre = 'Invitado') {
     return 'Hola saludos ' .  $nombre;
 });
+
+Route::get('/contactanos', function() {
+    return "Hola desde la pagina de contacto";
+})->name('contactos');
