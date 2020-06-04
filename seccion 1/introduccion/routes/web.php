@@ -9,3 +9,7 @@ Route::get('/', function() {
 Route::get('/contacto', function() {
     return "Hola desde la pagina de contacto";
 });
+
+Route::get('saludo/{nombre?}', function($nombre = 'Invitado') {
+    return 'Hola saludos ' .  $nombre;
+});
