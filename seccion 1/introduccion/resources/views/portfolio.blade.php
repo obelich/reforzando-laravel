@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>portfolio</title>
-    </head>
-    <body>
-    <h1>portfolio</h1>
+@extends('layout')
 
+@section('title')
+    Portfolio
+@endsection
 
+@section('content')
+    <h1>Portfolio</h1>
 
-    </body>
-</html>
+@endsection

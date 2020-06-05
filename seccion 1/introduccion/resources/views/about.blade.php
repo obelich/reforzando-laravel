@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>About</title>
-    </head>
-    <body>
-    <h1>about</h1>
+@extends('layout')
 
+@section('title', 'About')
 
+@section('content')
+    <h1>About</h1>
 
-    </body>
-</html>
+@endsection
